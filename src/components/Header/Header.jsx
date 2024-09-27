@@ -46,7 +46,6 @@ function Header({ headerNav }) {
                 </Link>
                 <ThemeSwitchButton onClick={() => switchTheme()} />
             </ul>
-            {console.log(theme)}
         </header>
     );
 }

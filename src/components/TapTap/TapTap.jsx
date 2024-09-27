@@ -23,8 +23,8 @@ function TapTap() {
                 </div>
             </div>
             <div>
-                <input type="text" />
-                <button>Restart</button>
+                <input type="text" className="input"/>
+                <button className="button">Restart</button>
             </div>
         </main>
     );

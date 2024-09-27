@@ -1,4 +1,4 @@
-.main{
+.main {
     height: 90vh;
     width: 100%;
     display: flex;
@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.main-content{
+.main-content {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -15,35 +15,92 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 22px;
-    h1, p{
+
+    h1,
+    p {
         margin-bottom: 30px;
     }
 }
 
-.container{
+.input {
+    width: 15vw;
+    height: 1vh;
+    padding: 20px;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    transition: background-color 0.3s linear;
+}
+
+.container {
     display: flex;
     align-items: center;
     gap: 20px;
     width: 80vw;
     height: 12vh;
-    padding: 30px;
-    padding-right: 0px;
     padding-left: 70px;
-    background-color: #580426;
+    text-align: start;
     border-radius: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 28px;
 }
 
-main.dark-theme{
-    background-color: #1A0458;
-    color: white;
+.button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    transition: background-color 0.3s linear;
 }
 
-main.light-theme{
+main.dark-theme {
+    background-color: #1A0458;
+    color: white;
+    transition: color 0.5s ease;
+    transition: background-color 0.5s linear;
+
+    .container {
+        background-color: #580426;
+        transition: background-color 0.3s linear;
+    }
+
+    .input{
+        background-color: #160349;
+        color: white;
+        border: 2px solid white;
+        transition: background-color 0.3s linear;
+    }
+
+    .button{
+        background-color: #160349;
+        color: white;
+        transition: background-color 0.3s linear;
+    }
+}
+
+main.light-theme {
     background-color: #fff;
     color: black;
-    transition: background-color 0.5s ease;
     transition: color 0.5s ease;
+    transition: background-color 0.5s linear;
+
+    .container {
+        background-color: #F2F8D8;
+        transition: background-color 0.3s linear;
+    }
+
+    .input{
+        background-color: #fff;
+        color: black;
+        border: 2px solid black;
+        transition: background-color 0.3s linear;
+    }
 }

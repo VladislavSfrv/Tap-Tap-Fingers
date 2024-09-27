@@ -19,7 +19,7 @@
 .dark-theme {
     background-color: #510456;
     color: white;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s linear;
     a {
         color: inherit;
         text-decoration: none;
@@ -48,10 +48,9 @@
 .light-theme {
     background-color: #DDD7F8;
     color: black;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s linear;
     a {
         background-color: #DDD7F8;
-        transition: background-color 0.5s ease;
         color: black;
         &:hover {
             text-decoration: underline;

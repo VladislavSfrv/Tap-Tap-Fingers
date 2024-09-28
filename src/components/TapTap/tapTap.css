@@ -61,6 +61,10 @@
     transition: background-color 0.3s linear;
 }
 
+.mistake{
+    color: red !important;  
+}
+
 main.dark-theme {
     background-color: #1A0458;
     color: white;
